@@ -15,7 +15,7 @@ function InfoSection({
     return (
         <section className='infoSection'>
             {InfoData.map((item, index) => (
-                <div className="container">
+                <div className="container" key={index}>
                     <div className="columnLeft">
                         <h1>{item.heading}</h1>
                         <p>{item.paragraph1}</p>

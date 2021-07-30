@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef} from 'react'
 import './hero.css'
-import back1 from '../../images/image1.jpeg'
+// import back1 from '../../images/image1.jpeg'
 import { Link } from 'react-router-dom'
 
 const Hero = ({ slides }) => {
