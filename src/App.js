@@ -1,19 +1,29 @@
 import React from 'react'
-import Navbar from './components/NavBar/Navbar';
+import { BrowserRouter as Router, Switch, Route} from  'react-router-dom'
+
 import './App.css'
-import Hero from './components/Hero/Hero';
-import { HeroData } from './data/HeroData'
+
+import Navbar from './components/NavBar/Navbar';
 import Dropdown from './components/Dropdown/Dropdown';
-import InfoSection from './components/InfoSection/InfoSection';
+import About from './pages/About/About';
+import Home from './pages/Home/Home';
+import Footer from './pages/Footer/Footer'
+import Contact from './pages/Contact/Contact'
 
 function App() {
 
   return (
     <>
+    <Router>
       <Navbar/>
       <Dropdown/>
-      <Hero slides={HeroData}/>
-      <InfoSection/>
+      <Switch>
+        <Route  path='/' exact component={Home}/>
+        <Route path='/about' component={About}/>
+        <Route path='/contact' component={Contact}/>
+      </Switch>
+      <Footer/>
+    </Router>
     </>
   )
 }
