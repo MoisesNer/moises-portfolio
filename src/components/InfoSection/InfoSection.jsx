@@ -1,6 +1,7 @@
 import React from 'react'
 import './infoSection.css'
 import { Link } from 'react-router-dom'
+import { InfoData } from '../../data/InfoData'
 
 function InfoSection({
     heading,
@@ -13,17 +14,19 @@ function InfoSection({
 
     return (
         <section className='infoSection'>
-            <div className="container">
-                <div className="columnLeft">
-                    <h1>{heading}</h1>
-                    <p>{paragraph1}</p>
-                    <p>{paragraph2}</p>
-                    <Link to='/works'>{buttonLabel}</Link>
+            {InfoData.map((item, index) => (
+                <div className="container">
+                    <div className="columnLeft">
+                        <h1>{item.heading}</h1>
+                        <p>{item.paragraph1}</p>
+                        <p>{item.paragraph2}</p>
+                        <Link to='/works'>{item.buttonLabel}</Link>
+                    </div>
+                    <div className="columnRight" reverse={reverse}>
+                        <img src={item.image} alt="works" />
+                    </div>
                 </div>
-                <div className="columnRight" reverse={reverse}>
-                    <img src={image} alt="works" />
-                </div>
-            </div>
+            ))}
         </section>
     )
 }

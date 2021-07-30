@@ -3,7 +3,8 @@ import Apocalypse from '../images/Apocalypse.png'
 import NervisWeather from '../images/NervisWeather.png'
 import TodoWawi from '../images/TodoWawi.png'
 
-export const InfoData1 = {
+export const InfoData = [
+{
     heading: 'Sebastian Nervis Adventures',
     paragraph1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum facilis non temporibus assumenda ullam neque suscipit similique molestias quo rerum ex, incidunt eveniet provident maiores sed soluta. Quibusdam, iste blanditiis maxime earum dolore',
     paragraph2: 'velit sit nostrum temporibus at odio unde. Aperiam inventore aliquid facere, asperiores tempora similique perferendis necessitatibus vero?',
@@ -11,8 +12,8 @@ export const InfoData1 = {
     image: SebiAdventures,
     reverse: false,
     delay: 100
-};
-export const InfoData2 = {
+},
+{
     heading: 'Apocalypse Paintball',
     paragraph1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum facilis non temporibus assumenda ullam neque suscipit similique molestias quo rerum ex, incidunt eveniet provident maiores sed soluta. Quibusdam, iste blanditiis maxime earum dolore',
     paragraph2: 'velit sit nostrum temporibus at odio unde. Aperiam inventore aliquid facere, asperiores tempora similique perferendis necessitatibus vero?',
@@ -20,8 +21,8 @@ export const InfoData2 = {
     image: Apocalypse,
     reverse: false,
     delay: 100
-};
-export const InfoData3 = {
+},
+{
     heading: 'Nervis Weather App',
     paragraph1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum facilis non temporibus assumenda ullam neque suscipit similique molestias quo rerum ex, incidunt eveniet provident maiores sed soluta. Quibusdam, iste blanditiis maxime earum dolore',
     paragraph2: 'velit sit nostrum temporibus at odio unde. Aperiam inventore aliquid facere, asperiores tempora similique perferendis necessitatibus vero?',
@@ -29,8 +30,8 @@ export const InfoData3 = {
     image: NervisWeather,
     reverse: false,
     delay: 100
-};
-export const InfoData4 = {
+},
+{
     heading: 'Todo WAWI`s app',
     paragraph1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum facilis non temporibus assumenda ullam neque suscipit similique molestias quo rerum ex, incidunt eveniet provident maiores sed soluta. Quibusdam, iste blanditiis maxime earum dolore',
     paragraph2: 'velit sit nostrum temporibus at odio unde. Aperiam inventore aliquid facere, asperiores tempora similique perferendis necessitatibus vero?',
@@ -38,4 +39,5 @@ export const InfoData4 = {
     image: TodoWawi,
     reverse: false,
     delay: 100
-};
+},
+]
