@@ -26,13 +26,14 @@
     padding: 2rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 800px;
 }
 
 .columnLeft{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     line-height: 1.4;
     padding: 1rem 1rem;
 }
@@ -42,7 +43,6 @@
 }
 
 .columnRight{
-    /* NEW */
     width: 90%;
     height: 100%;
     object-fit: cover;

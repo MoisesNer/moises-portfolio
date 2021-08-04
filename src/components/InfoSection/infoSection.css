@@ -14,7 +14,6 @@ padding: 4rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
     line-height: 1.4;
     padding: 1rem 2rem;
 }
@@ -64,7 +63,7 @@ align-items: center;
   padding: 0;
   height: 20px;
 
-  /*  Remove overflow to see how it works　:) */
+  /*  Remove overflow */
   overflow: hidden;
 }
 
@@ -103,7 +102,7 @@ align-items: center;
   align-items: center;
   margin-left: 10px;
   
-  /*  Remove overflow to see how it works　:) */
+  /*  Remove overflow */
   overflow: hidden;
 }
 

@@ -1,6 +1,5 @@
 .navbar{
     height: 60px;
-    /* background: rgba(0, 0, 0, 0.303); */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,7 +7,29 @@
     z-index: 100;
     position: fixed;
     width: 100%;
-    /* opacity: 20%; */
+    background: transparent;
+    font-weight: lighter;
+    
+    /* TRANSITION */
+    /* transition: background 0.4s ease-in-out; */
+    -moz-transition: all 1s ease-in;
+    /* WebKit */
+    -webkit-transition: all 1s ease-in;
+    /* Opera */
+    -o-transition: all 1s ease-in;
+    /* Standard */
+    transition: all 1s ease-in;
+}
+
+.navbar.active{
+    background: rgba(0, 0, 0, 5);
+    
+    /* NOT WORKING*/
+    /* background: linear-gradient(90deg, rgb(75, 75, 75), rgb(0, 0, 0)); */
+
+    /* -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear; */
 }
 
 .navbar-logo{
@@ -25,6 +46,8 @@ a{
     height: 100%;
     padding: 1rem;
     text-transform: uppercase;
+
+    /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
 }
 .navbar-link:hover{
     transform: translateY(1px);
@@ -51,28 +74,23 @@ a{
 }
 
 .nav-menu{
-/* display: flex; */
-/* align-items: center; */
+display: flex;
+align-items: center;
 margin-right: 3rem;
 }
 
 .navbar-button{
-    /* background-color: var(--secondary); */
+
     background-color: var(--primary);
-    /* color: white; */
     color: black;
     border: none;
     outline: none;
-    /* min-width: 100px;
-    max-width: 200px; */
     white-space: nowrap;
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s;
     padding: 8px 10px;
     font-size: 20px;
-    /* text-shadow:0px 1px 0px var(--primary);  */
-    /* box-shadow: 0px 10px 14px -7px var(--primary); */
     border-radius:8px;
 }
 .navbar-button:hover{

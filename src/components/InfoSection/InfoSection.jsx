@@ -2,12 +2,12 @@ import React from 'react'
 import './infoSection.css'
 import { Link } from 'react-router-dom'
 import { InfoData } from '../../data/InfoData'
-// import '../../images/About.png'
 
 function InfoSection() {
 
     return (
         <section className='infoSection'>
+
             {InfoData.map((item, index) => (
                 <div className="container" key={index}>
                     <div className="columnLeft">
@@ -20,8 +20,8 @@ function InfoSection() {
                         <Link to='/' className="link">
                             <span className="mask">
                                 <div className="link-container">
-                                    <span className="link-title1 title">{item.buttonLabel} Project</span>
-                                    <span className="link-title2 title">{item.buttonLabel} Preview</span>
+                                    <span className="link-title1 title">{item.buttonLabel}</span>
+                                    <span className="link-title2 title">{item.buttonLabel}</span>
                                 </div>
                             </span>
                             <div className="link-icon">
