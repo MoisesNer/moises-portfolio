@@ -5,7 +5,6 @@ import './error.css'
 export default function Error() {
     return (
         <div className="error">
-            {/* -- START -- */}
 
         <div className='error-container'>
             <div className="error-text-wrapper">
@@ -23,7 +22,6 @@ export default function Error() {
             </div>
         </div>
             
-            {/* -- END -- */}
         </div>
     )
 }

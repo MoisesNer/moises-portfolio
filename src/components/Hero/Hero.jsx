@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef} from 'react'
 import './hero.css'
-// import back1 from '../../images/image1.jpeg'
 import { Link } from 'react-router-dom'
 
 const Hero = ({ slides }) => {
@@ -50,15 +49,12 @@ const Hero = ({ slides }) => {
                         <div className="hero-slide" key={index}>
                             {index === current && (
                             <div className="hero-slider">
-                            <img src={slide.image} alt={slide.alt} className='hero-img' />
-                                <div className="hero-content">
+                            <img src={slide.image[0]} alt={slide.alt} className='hero-img' />
+                                {/* <div className="hero-content">
                                     <h1>{slide.title}</h1>
-                                    <p>{slide.description}</p>
-                                    <Link to={slide.path} className='hero-button'>{slide.label}</Link>
-                                    {/* <button to={slide.path} className='hero-button'>
-                                        {slide.label}
-                                    </button> */}
-                                </div>
+                                    <p>{slide.paragraph1}</p>
+                                    <Link to={slide.slug} className='hero-button'>{slide.title}</Link>
+                                </div> */}
                             </div>
                             )}
                         </div>

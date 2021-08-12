@@ -10,9 +10,10 @@ import Home from './pages/Home/Home';
 import Footer from './pages/Footer/Footer'
 import Contact from './pages/Contact/Contact'
 import Error from './pages/Error/Error'
+import Project from './pages/Project/Project'
 
-import { InfoData } from './data/InfoData';
-import ProjectDetail from './pages/ProjectDetail/ProjectDetail'
+// import { InfoData } from './data/InfoData';
+// import ProjectDetail from './pages/ProjectDetail/ProjectDetail'
 
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
       <Dropdown/>
       <Switch>
         <Route  path='/' exact component={Home}/>
-        <Route path='/about' component={About}/>
-        <Route path='/contact' component={Contact}/>
-          {/* <Route path={item.id} component={ProjectDetail}/> */}
-          <Route component={ Error }/>
+        <Route path='/about' exact component={About}/>
+        <Route path='/contact' exact component={Contact}/>
+          <Route path='/:slug' exact component={Project}/>
+        <Route component={Error}/>
       </Switch>
       <Footer/>
     </Router>

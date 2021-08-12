@@ -15,3 +15,9 @@ html, body{
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.loading{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 3rem;
+}

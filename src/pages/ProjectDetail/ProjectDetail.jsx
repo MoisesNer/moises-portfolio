@@ -1,19 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import './projectDetail.css'
-import { InfoData } from '../../data/InfoData'
+import React, { Component } from 'react'
 
-function ProjectDetail(){
-    // useEffect(() => {}, []);
-
-    // const [item, setItem] = useState({})
-
-    return(
-        <div className="projectDetail">
-             {/* {InfoData.map((item, index) => ( */}
-            <h1>Hello Wawi</h1>
-        </div>
-    )
-
+export default class ProjectDetail extends Component {
+    render() {
+        return (
+            <div>
+                Single PROJECT
+            </div>
+        )
+    }
 }
-
-export default ProjectDetail
